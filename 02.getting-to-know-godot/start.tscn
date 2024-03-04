@@ -23,6 +23,7 @@ metadata/_edit_lock_ = true
 tile_set = ExtResource("3")
 format = 2
 layer_0/name = "Invisible walls"
+metadata/_edit_lock_ = true
 
 [node name="Player" parent="." instance=ExtResource("4_mw6yi")]
 position = Vector2(344, 336)
