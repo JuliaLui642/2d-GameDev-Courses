@@ -7,7 +7,7 @@ var velocity := Vector2(0, 0)
 # You can access and change the direction variable inside the _process() function as you did in the lesson.
 var direction := Vector2(0, 0)
 
-func _process(delta: float) -> void:
+func _process(delta: float) -> void: 
 	direction.x = Input.get_axis("move_left", "move_right")
 	direction.y = Input.get_axis("move_up","move_down")
 
