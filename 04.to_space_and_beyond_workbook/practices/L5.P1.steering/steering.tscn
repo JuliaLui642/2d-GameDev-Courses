@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://dh3jfnudol55k"]
 
 [ext_resource type="Texture2D" uid="uid://d1xp2mgpkkc42" path="res://assets/practice_assets/shape_ship.png" id="1_43x22"]
-[ext_resource type="Script" path="res://practices/L5.P1.steering/steering.gd" id="2_fdpd8"]
+[ext_resource type="Script" path="res://practices/L5.P1.steering/steering.gd" id="2_rxvw2"]
 [ext_resource type="Texture2D" uid="uid://bkueifls7csiy" path="res://assets/practice_assets/ellipse_white.png" id="3_ovrv2"]
 [ext_resource type="Texture2D" uid="uid://ci5b253al1tus" path="res://assets/practice_assets/ellipse_yellow.png" id="4_q4dmt"]
 
@@ -21,7 +21,7 @@ scale_curve = SubResource("CurveTexture_wu7u1")
 [node name="Sprite2D" type="Sprite2D"]
 position = Vector2(960, 540)
 texture = ExtResource("1_43x22")
-script = ExtResource("2_fdpd8")
+script = ExtResource("2_rxvw2")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 modulate = Color(0.584314, 0.380392, 0.933333, 1)
