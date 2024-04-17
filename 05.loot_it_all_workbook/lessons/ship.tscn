@@ -51,3 +51,5 @@ offset_right = 96.0
 offset_bottom = -50.0
 theme_override_styles/fill = SubResource("StyleBoxFlat_f50s2")
 value = 40.0
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
