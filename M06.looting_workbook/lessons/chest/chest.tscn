@@ -16,22 +16,7 @@ shader_parameter/line_color = Color(0, 0, 0, 1)
 shader_parameter/line_thickness = 16.0
 shader_parameter/viewport_scale = Vector2(1, 1)
 
-[sub_resource type="Animation" id="Animation_k2bxq"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("CanvasGroup/Top:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(100, 96)]
-}
-
-[sub_resource type="Animation" id="Animation_f4nms"]
+[sub_resource type="Animation" id="Animation_7h5tr"]
 resource_name = "open"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -43,13 +28,28 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.1, 0.2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
-"values": [Vector2(0, -14), Vector2(121, -99), Vector2(153, 78)]
+"values": [Vector2(0, -14), Vector2(93, -75), Vector2(127, 70)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_htssh"]
+[sub_resource type="Animation" id="Animation_a04kk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasGroup/Top:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, -14)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fnrjx"]
 _data = {
-"RESET": SubResource("Animation_k2bxq"),
-"open": SubResource("Animation_f4nms")
+"RESET": SubResource("Animation_a04kk"),
+"open": SubResource("Animation_7h5tr")
 }
 
 [node name="Chest" type="Area2D"]
@@ -66,7 +66,7 @@ material = SubResource("ShaderMaterial_l0t5i")
 texture = ExtResource("1_485f1")
 
 [node name="Top" type="Sprite2D" parent="CanvasGroup"]
-position = Vector2(100, 96)
+position = Vector2(0, -14)
 texture = ExtResource("3_c8jrn")
 
 [node name="Lock" type="Sprite2D" parent="CanvasGroup"]
@@ -75,5 +75,5 @@ texture = ExtResource("2_ogjoq")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_htssh")
+"": SubResource("AnimationLibrary_fnrjx")
 }

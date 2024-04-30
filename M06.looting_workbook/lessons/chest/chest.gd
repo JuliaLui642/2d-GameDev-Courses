@@ -19,7 +19,6 @@ func _ready() -> void:
 	canvas_group.material.set_shader_parameter("line_thickness", 3.0)
 
 func _on_mouse_entered()-> void:
-	canvas_group.material.set_shader_parameter("line_thickness", 6.0)
 	var tween := create_tween()
 	tween.tween_method(set_outline_thickness, 3.0, 6.0, 0.08)
 	
