@@ -2,14 +2,11 @@ extends Area2D
 
 @onready var canvas_group:CanvasGroup = $CanvasGroup
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
-var is_open := false
+@export var possible_items: Array[PackedScene] = []
 
 
 func open() -> void:
 	animation_player.play("open")
-	if is_open:
-		return
-	is_open = true
 	input_pickable = false
 
 # Called when the node enters the scene tree for the first time.
