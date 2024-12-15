@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://b5v75wirtqmot"]
+[gd_scene load_steps=7 format=3 uid="uid://b5v75wirtqmot"]
 
 [ext_resource type="Shader" path="res://assets/sliding_background.gdshader" id="1_2ukno"]
+[ext_resource type="Theme" uid="uid://bhyuxlsadr6a" path="res://lessons/main_theme.tres" id="1_nnf1p"]
 [ext_resource type="Texture2D" uid="uid://bnly1gkbxw6b5" path="res://assets/bubble_pattern.png" id="2_6x6dv"]
 [ext_resource type="Texture2D" uid="uid://copkt78vgp37i" path="res://assets/sophia.png" id="3_hr5gw"]
 [ext_resource type="Texture2D" uid="uid://d000xjtr4iqtk" path="res://assets/emotion_regular.png" id="4_rd08m"]
@@ -17,6 +18,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 1927.0
 offset_bottom = 1081.0
+theme = ExtResource("1_nnf1p")
 
 [node name="Background" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_8oobt")
@@ -62,13 +64,14 @@ anchors_preset = -1
 anchor_left = 0.423
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -48.121
-offset_top = 582.0
-offset_right = -626.0
-offset_bottom = -449.0
+offset_left = 32.879
+offset_top = 572.0
+offset_right = -545.0
+offset_bottom = -459.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Hello World!"
+fit_content = true
 
 [node name="NextButton" type="Button" parent="."]
 layout_mode = 1
